@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Bitter|ZCOOL+XiaoWei');
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.14);
+}
+.logo {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  font-family: "dancing script";
+  grid-column: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-column: 2/4;
+  justify-self: center;
+  align-self: center;
+  list-style: none;
+}
+.nav-bar li {
+  padding: 0 1.2em;
+}
+.nav-bar li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: lightgrey;
+  font-family: bitter;
+}
+.nav-bar li a:hover{
+  color: white;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 2fr;
+}
+.header h1 {
+  font-size: 2.5em;
+  font-family: "ZCOOL XiaoWei";
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: end;
+}
+.header h2 {
+  font-size: 2em;
+  font-family: "ZCOOL XiaoWei";
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: start;
+}
+.header a {
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 25px;
+  cursor: pointer;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: end;
+}
+.header a:hover {
+  color: rgb(60,60,60);
+  background-color: rgba(255,255,255,0.5);
+}
+.arrow-down {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: center;
+  align-self: end;
+  animation-name: arrows ;
+  animation-duration: 2s;
+}
+.arrow-down img{
+  animation-name: arrow ;
+  animation-duration: 2s;
+  animation: arrow 2s infinite;
+}
+@keyframes arrow {
+  0% {transform: translate(0,2em);}
+  50%  {transform: translate(0,3em);}
+  100% {transform: translate(0,2em);}
+}
+.header h1 {
+  animation-name: header1;
+  animation-duration: 2s;
+}
+@keyframes header1 {
+  0% {transform: translate(-100%,0);}
+  100% {transform: translate(0,0);}
+}
+.header h2 {
+  animation-name: header2;
+  animation-duration: 2s;
+}
+@keyframes header2 {
+  0% {transform: translate(-100%,0);}
+  100% {transform: translate(0,0);}
+}
